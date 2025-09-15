@@ -10,7 +10,6 @@
     "kokab"
   ],
   "author": "kokab",
-  "type": "module",
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0",
