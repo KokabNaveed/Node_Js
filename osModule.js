@@ -1,11 +1,15 @@
 const os = require('os')
 
-console.log(os.homedir())
+console.log(`Home Directory: ${os.homedir()}`)
 
-console.log(os.freemem())
+console.log(`Free Memory: ${os.freemem()}`)
 
-console.log(os.hostname())
+console.log(`Host Name: ${os.hostname()}`)
 
-console.log(os.platform())
+console.log(`PlatForm: ${os.platform()}`)
 
-console.log(os.release())
+console.log(`Release: ${os.release()}`)
+
+console.log(`Total Memory: ${os.totalmem()}`)
+
+console.log(`CPU Arch: ${os.arch()}`)
