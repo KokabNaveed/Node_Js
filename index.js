@@ -1,6 +1,5 @@
-const kokab = require("./second")
+const sayHello = require("./greetings")
 
-console.log("Hello World");
+console.log(sayHello('Kokab'))
 
-console.log(kokab.age);
 
