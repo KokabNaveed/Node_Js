@@ -13,12 +13,26 @@ const fs = require('fs');
 
 // Write File
 
-const content = "Hello, I am learning Node Js";
+// const content = "Hello, I am learning Node Js";
 
-fs.writeFile('output.txt', content, (err) => {
-    if (err) {
-        console.error("Error Writing To file: ", err);
-        return;
-    }
-    console.log('Written Successfully to the File')
-})
+// fs.writeFile('output.txt', content, (err) => {
+//     if (err) {
+//         console.error("Error Writing To file: ", err);
+//         return;
+//     }
+//     console.log('Written Successfully to the File')
+// })
+
+
+// callback Explain
+
+// Async file read with callback
+fs.readFile('ReadFile.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error('Error:', err);
+    return;
+  }
+  console.log('File content:', data);
+});
+
+console.log('This runs before file reading finishes!');
